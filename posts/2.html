@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body>
+    <h1>Pwnagotchi</h1>
+<!--
+    <h2>Heading big</h2>
+    <h3>Heading not so big</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+-->
+
+<!--
+<h1>Wow a header</h1>
+<pre>Such paragraph</pre>
+-->
+
+<!-- a link example -->
+<a href="https://pwnagotchi.ai/">Pwnagotchi website</a> 
+	<br>
+		<figure>
+		    <img src="../assets/img/pwnagotchi_title.png" 
+		    alt="a raspberry pi 0w with a screen and a battery bank" 
+		    title="a raspberry pi 0w with a screen and a battery bank" > 
+
+		    <figcaption>A cute little virtural pet O-O</figcaption>
+		</figure>
+	<br>
+	
+<pre>A pwnagotchi is a digital ai that lives in a raspberry pi 0.
+The pwnagotchi will scan the area for wifi networka and send 
+deauth (de authentication) attack on a client of that network
+to capture the hand shake of the re established connection.</pre>
+
+<pre>Code used to get it working </pre>
+<pre class="brush: bash">
+    <code >
+
+wget "https://github.com/evilsocket/pwnagotchi/releases"
+dd if=path-to-img.img of=/dev/sdcard bs=1m
+
+#substitute micro with your text editor of choice
+cd /dev/sdcard
+#enter you network into the config
+micro /etc/pwnagotchi/config.toml
+
+#plugin you pwnagotchi and wait
+#DO NOT TURN IT OFF. IT IS MAKING KEYS.
+
+#If you are on windows you will need this if windows does not reconise it as a RNDIS device
+#wget "https://www.factoryforward.com/wp-content/uploads/2018/01/mod-duo-rndis.zip"
+#extract mod-duo-rndis.zip
+#install folder AND subfolder as a driver for it
+ 
+ssh pi@pwnagotchi.local
+
+
+    </code>
+</pre>
+
+</body>
+</html>
