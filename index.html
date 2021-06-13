@@ -1,19 +1,41 @@
+<!-- blog template -->
+<!--            ID for automation                     file           name               -->
 <h3 id="-go-to-a-blog-post-posts-1-html-"><a href="posts/1.html">Go to a blog post</a></h3>
-<h3 id="-testing-md-post-posts-1-md-"><a href="posts/1.md">testing md post</a></h3>
+
+
+
+
+
+
+
+
+<!-- diffrent headers         -->
 <h1 id="heading-1">Heading 1</h1>
 <h2 id="heading-2">Heading 2</h2>
 <h3 id="heading-3">Heading 3</h3>
 <h4 id="heading-4">Heading 4</h4>
 <h5 id="heading-5">Heading 5</h5>
 <h6 id="heading-6">Heading 6</h6>
-<h3 id="text-styling">Text styling</h3>
-<h4 id="renders-as">Renders as</h4>
-<p>*ignore markdown characters*<br><em>Italic</em><br><strong>Bold</strong><br><strong><em>Bold and italic</em></strong>  </p>
-<h4 id="source">Source</h4>
-<pre><code>\*ignore <span class="hljs-keyword">markdown </span>characters\*  
-*<span class="hljs-keyword">Italic* </span> 
-**<span class="hljs-keyword">Bold** </span> 
-**_Bold <span class="hljs-keyword">and </span><span class="hljs-keyword">italic_**</span>
+
+<!-- text styles -->
+<!-- <h3 id="text-styling">Text styling</h3> -->
+<!-- <h4 id="renders-as">Renders as</h4> -->
+<p>*ignore markdown characters*
+    <br>
+        <em>Italic</em>
+    <br>
+        <strong>Bold</strong>
+    <br>
+        <strong>
+        <em>Bold and italic</em>
+        </strong> 
+</p>
+
+<!-- block quotes -->
+<!-- Not Working -->
+
+<!--
+
 </code></pre><h3 id="block-quotes">Block quotes</h3>
 <h4 id="renders-as">Renders as</h4>
 <blockquote>
@@ -22,98 +44,221 @@
 <pre><code>Intelligence is <span class="hljs-keyword">the</span> ability <span class="hljs-built_in">to</span> avoid doing work, yet getting <span class="hljs-keyword">the</span> work done.    
 -Linus Torvalds
 </code></pre></blockquote>
+
+-->
+
+
+<!-- super and subscripting -->
+
 <h3 id="superscript-and-subscript">Superscript and subscript</h3>
-<h4 id="renders-as">Renders as</h4>
 <h5 id="superscript-demonstrated-by-einstein-s-famous-mass-energy-equivalence">Superscript demonstrated by Einstein&#39;s famous Mass–energy equivalence</h5>
+
 <p>E=MC<sup>2</sup>  </p>
+
 <h5 id="subscript-demonstrated-by-the-equation-for-finding-the-nth-fibonacci-number-recursively">Subscript demonstrated by the equation for finding the Nth Fibonacci number recursively</h5>
+
 <p>F<sub>n</sub>=F<sub>n-1</sub>+F<sub>n-2</sub></p>
+
+<!--
 <h4 id="source">Source</h4>
 <pre><code><span class="hljs-comment">##### Superscript demonstrated by Einstein famous Mass–energy equivalence</span>
 E=MC<span class="hljs-variable">&lt;sup&gt;</span>2<span class="hljs-variable">&lt;/sup&gt;</span>  
 <span class="hljs-comment">##### Subscript demonstrated by the equation for finding the Nth Fibonacci number recursively</span>
 F<span class="hljs-variable">&lt;sub&gt;</span>n<span class="hljs-variable">&lt;/sub&gt;</span>=F<span class="hljs-variable">&lt;sub&gt;</span>n-1<span class="hljs-variable">&lt;/sub&gt;</span>+F<span class="hljs-variable">&lt;sub&gt;</span>n-2<span class="hljs-variable">&lt;/sub&gt;</span>
+-->
+
+<!-- code blocks -->
 </code></pre><h3 id="code-blocks">Code blocks</h3>
+
+<!-- code block name -->
 <p><code>Wow, code block</code></p>
-<pre><code><span class="hljs-keyword">Multi-line </span><span class="hljs-meta">code</span> <span class="hljs-keyword">block </span> 
-<span class="hljs-symbol">In</span> <span class="hljs-keyword">markdown, </span>makes a haiku
-<span class="hljs-symbol">Japanese</span> poem
-</code></pre><p>With JS syntax highlighting</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fib</span><span class="hljs-params">(n)</span></span>{
-  <span class="hljs-keyword">if</span>(n &lt; <span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> n;
-  <span class="hljs-keyword">return</span> fib(n - <span class="hljs-number">1</span>) + fib(n - <span class="hljs-number">2</span>);
+
+<!-- Code -->
+<!-- 
+Multi-line code block  
+In markdown, makes a haiku
+Japanese poem
+-->
+
+<pre>
+    <code>
+        <span class="hljs-keyword">Multi-line </span><span class="hljs-meta">code</span> <span class="hljs-keyword">block </span> 
+        <span class="hljs-symbol">In</span> <span class="hljs-keyword">markdown, </span>makes a haiku
+        <span class="hljs-symbol">Japanese</span> poem
+    </code>
+</pre>
+
+<!--
+function fib(n){
+  if(n < 2) return n;
+  return fib(n - 1) + fib(n - 2);
 }
-</code></pre>
+-->
+
+<p>With JS syntax highlighting</p>
+<pre>
+    <code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fib</span><span class="hljs-params">(n)</span></span>{
+          <span class="hljs-keyword">if</span>(n &lt; <span class="hljs-number">2</span>) <span class="hljs-keyword">return</span> n;
+          <span class="hljs-keyword">return</span> fib(n - <span class="hljs-number">1</span>) + fib(n - <span class="hljs-number">2</span>);
+        }
+    </code>
+</pre>
+
+<!-- testing plaing text -->
+<pre>
+    <code>
+    testing plain
+    text
+    ExAmPlE
+    </code
+</pre>
+
+
+<!-- table -->
 <h3 id="tables">Tables</h3>
 <h4 id="renders-as">Renders as</h4>
+
+<!--
+Column 	Different column
+Table thing one 	they're called arguments
+Row 	No, they're called parameters
+Cell 	Actually, they're called cells.
+-->
+
 <table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Different column</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Table thing one</td>
-<td><em>they&#39;re called arguments</em></td>
-</tr>
-<tr>
-<td>Row</td>
-<td><strong>No, they&#39;re called parameters</strong></td>
-</tr>
-<tr>
-<td>Cell</td>
-<td><code>Actually, they&#39;re called cells.</code></td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+        <th>Column</th>
+        <th>Different column</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Table thing one</td>
+            <td><em>they&#39;re called arguments</em></td>
+        </tr>
+        <tr>
+            <td>Row</td>
+            <td><strong>No, they&#39;re called parameters</strong></td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td><code>Actually, they&#39;re called cells.</code></td>
+        </tr>
+    </tbody>
 </table>
+
+
 <h4 id="source">Source</h4>
-<pre><code>|<span class="hljs-string"> Column </span>|<span class="hljs-string"> Different column </span>|
-|<span class="hljs-string"> ------ </span>|<span class="hljs-string"> ----------- </span>|
-|<span class="hljs-string"> Table thing one  </span>|<span class="hljs-string">*they're called arguments* </span>|
-|<span class="hljs-string"> Row </span>|<span class="hljs-string"> **No, they're called parameters** </span>|
-|<span class="hljs-string"> Cell</span>|<span class="hljs-string"> `Actually, they're called cells.` </span>|
-</code></pre><h3 id="lists">Lists</h3>
-<h4 id="renders-as">Renders as</h4>
+
+<!--
+| Column | Different column |
+| ------ | ----------- |
+| Table thing one  |*they're called arguments* |
+| Row | **No, they're called parameters** |
+| Cell| `Actually, they're called cells.` |
+-->
+
+<pre>
+    <code>
+        |<span class="hljs-string"> Column </span>|<span class="hljs-string"> Different column </span>|
+        |<span class="hljs-string"> ------ </span>|<span class="hljs-string"> ----------- </span>|
+        |<span class="hljs-string"> Table thing one  </span>|<span class="hljs-string">*they're called arguments* </span>|
+        |<span class="hljs-string"> Row </span>|<span class="hljs-string"> **No, they're called parameters** </span>|
+        |<span class="hljs-string"> Cell</span>|<span class="hljs-string"> `Actually, they're called cells.` </span>|
+    </code>
+</pre>
+
+<!-- list -->
+
+
+<h3 id="lists">Lists</h3>
+
+<!--
+
+Top list
+-Other thing
+Top list 2
+    Foo
+    Bar
+    Ack
+
+-->
+
 <ul>
-<li>Top list<br>  <em>-Other thing</em></li>
-<li>Top list 2 <ol>
-<li><em>Foo</em></li>
-<li><em>Bar</em></li>
-<li><em>Ack</em></li>
-</ol>
-</li>
+    <li>Top list<br>  
+        <em>-Other thing</em>
+    </li>
+        <li>Top list 2 
+    <ol>
+        <li><em>Foo</em></li>
+        <li><em>Bar</em></li>
+        <li><em>Ack</em></li>
+    </ol>
+    </li>
 </ul>
+
+<!--
+
+1    List item
+2    List item | Italic
+
+3    List item | Bold
+
+4    List item 1
+5    List item 2
+6    List item 3
+
+-->
+
 <ol>
-<li>List item </li>
-<li><em>List item</em>  </li>
-<li><p><strong><em>List item</em></strong></p>
-</li>
-<li><p>List item 1  </p>
-</li>
-<li>List item 2  </li>
-<li>List item 3  </li>
+    <li>List item </li>
+    <li><em>List item</em>  </li>
+    <li>
+    <p><strong><em>List item</em></strong></p> </li>
+    <li>
+    <p>List item 1  </p> </li>
+    <li>List item 2  </li>
+    <li>List item 3  </li>
 </ol>
-<h4 id="source">Source</h4>
-<pre><code>* Top <span class="hljs-type">list</span>       
+
+
+<!--
+* Top list       
     *-Other thing*
-* Top <span class="hljs-type">list</span> <span class="hljs-number">2</span> 
-    <span class="hljs-number">1.</span> *Foo*
-    <span class="hljs-number">2.</span> *Bar*
-    <span class="hljs-number">3.</span> *Ack*
+* Top list 2 
+    1. *Foo*
+    2. *Bar*
+    3. *Ack*
 
 
-<span class="hljs-number">1.</span> List item 
-<span class="hljs-number">2.</span> *List item*  
-<span class="hljs-number">3.</span> **_List item_**
+1. List item 
+2. *List item*  
+3. **_List item_**
 
-- List item <span class="hljs-number">1</span>  
-- List item <span class="hljs-number">2</span>  
-- List item <span class="hljs-number">3</span>
-</code></pre><h3 id="strikethrough">Strikethrough</h3>
-<h4 id="renders-as">Renders as</h4>
-<p><del>the earth is flat</del></p>
-<h4 id="source">Source</h4>
-<pre><code>~~the earth <span class="hljs-keyword">is</span> flat~~
-</code></pre>
+- List item 1  
+- List item 2  
+- List item 3
+-->
+
+<pre>
+    <code>
+        * Top <span class="hljs-type">list</span>       
+            *-Other thing*
+        * Top <span class="hljs-type">list</span> <span class="hljs-number">2</span> 
+            <span class="hljs-number">1.</span> *Foo*
+            <span class="hljs-number">2.</span> *Bar*
+            <span class="hljs-number">3.</span> *Ack*
+
+
+        <span class="hljs-number">1.</span> List item 
+        <span class="hljs-number">2.</span> *List item*  
+        <span class="hljs-number">3.</span> **_List item_**
+
+        - List item <span class="hljs-number">1</span>  
+        - List item <span class="hljs-number">2</span>  
+        - List item <span class="hljs-number">3</span>
+    </code>
+</pre>
+
+<p><del>Strikethrough</del></p>
